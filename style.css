@@ -1,0 +1,29 @@
+img.rounded {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+.container1 {
+  display: grid;
+  grid-template-columns: auto 200px;
+  grid-template-rows: 75px auto;
+  margin: 10px;
+  padding: 0px;
+}
+#title {
+  display: grid;
+  grid-area: 1 / 1;
+  display: flex;
+  align-items: top;
+}
+#bio {
+  display: grid;
+  grid-area: 2 / 1;
+  align-content: top;
+}
+#profile-pic {
+  display: grid;
+  grid-area: 1 / 2 / span 2 / span 1;
+  align-content: center; 
+}
