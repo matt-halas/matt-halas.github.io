@@ -209,4 +209,4 @@ I got to Arlington lakes, and got to work on the pepperoni, chips, chocolate, an
 
 <iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/5703880270/embed/57121d66a05b28640df35a9be93b4dbfaf778f5a' target='blank'></iframe>
 
-Continue reading about the third week of my trip <a href="bike-trip-week-3" target="_blank">here</a>
+Continue reading about the third week of my trip <a href="bike-trip-week-3">here</a>

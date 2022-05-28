@@ -149,4 +149,4 @@ The trails started getting rougher as I got further from Fernie and the single t
 
 <iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/5666825074/embed/b434536e2b6791c39645def8974260427850f545' target='blank'></iframe>
 
-Continue reading about the second week of my trip <a href="bike-trip-week-2" target="_blank">here</a>
+Continue reading about the second week of my trip <a href="bike-trip-week-2">here</a>
