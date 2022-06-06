@@ -6,7 +6,7 @@ author: Matthew Halas
 ## Day 8 - Kikomun Creek Prov. Park to Cranbrook (75 km)
 At this point in the trip, I was still considering quitting due to the smoke. It wasn't too bad where I was but it was only going to get worse as I got further into BC. I wasn't sure where I was going to draw the line so I just packed up and got going in the morning. The first 15 kilometers of the day went super quick since it was on the road. I was really craving coffee this morning and luckily, there was a campsite with a general store along the road where I could pick some up. I was really hoping that there would be a store at Wardner, halfway between my start and end point of the day, but unfortunately there wasn't. I have never craved sweet drinks more than I have during this trip.
 
-<img src="images\day8-actionshot.jpg" alt="" width="80%"/>
+<img src="images\day8-actionshot.JPG" alt="" width="80%"/>
 <p style="text-align: center;"><i>I was trying not to think about how much more I had left in the day but the kilometer markers along this trail told me exactly how far I went every 4 minutes</i></p>
 I ran into a couple of bikepackers going the opposite way as me, and they told me the smoke wasn't too bad up ahead, so my hopes for the rest of the trip were raised! The Chief Isadore trail was a fun detour with a mellow climb followed by a fast and flowy descent.
 
