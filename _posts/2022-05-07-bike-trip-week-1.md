@@ -2,6 +2,7 @@
 layout: post
 author: Matthew Halas
 ---
+# Biking from Calgary to Vancouver - Week 1
 
 In November 2020, after one (1) month of snow, I was dreaming of summer. Unfortunately, since it was only November, I'd have to wait 5 months before it would be nice and warm out again. So until then, my only option was to experience summer vicariously through youtube videos. [This video](https://www.youtube.com/watch?v=V3O3ooTtrV4){:target="_blank"} came up on my feed so I watched it over the course of a few days while eating lunch. The Great Divide Mountain Bike Route (Banff, AB to the Mexico border) has been on my bucket list for a couple years and this video seemed to capture the experience so well. After watching the video, I knew I wanted to do a similar trip in the summer. So I started planning and I started dreaming of the upcoming trip!
 ## The Route

@@ -2,6 +2,7 @@
 layout: post
 author: Matthew Halas
 ---
+# Biking from Calgary to Vancouver - Week 2
 
 ## Day 8 - Kikomun Creek Prov. Park to Cranbrook (75 km)
 At this point in the trip, I was still considering quitting due to the smoke. It wasn't too bad where I was but it was only going to get worse as I got further into BC. I wasn't sure where I was going to draw the line so I just packed up and got going in the morning. The first 15 kilometers of the day went super quick since it was on the road. I was really craving coffee this morning and luckily, there was a campsite with a general store along the road where I could pick some up. I was really hoping that there would be a store at Wardner, halfway between my start and end point of the day, but unfortunately there wasn't. I have never craved sweet drinks more than I have during this trip.

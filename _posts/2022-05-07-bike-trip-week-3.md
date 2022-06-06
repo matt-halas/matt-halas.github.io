@@ -2,6 +2,7 @@
 layout: post
 author: Matthew Halas
 ---
+# Biking from Calgary to Vancouver - Week 3
 
 ## Day 15 - Arlington Lakes to Chute Lake (75 km)
 I got an early start to the day and tried to pack quietly to not wake up the other campers. I was packed up and biking as the sun was rising over the lake.
