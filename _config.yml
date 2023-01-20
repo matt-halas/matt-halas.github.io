@@ -1,8 +1,8 @@
-title: Moonwalk
+title: Matthew Halas
 author: Matthew Halas
-url: https://www.abhinavsaxena.com/moonwalk # root address of the site
+url: https://matt-halas.github.io/ # root address of the site
 description: > # description of the site (multiple lines allowed)
-  Moonwalk is a fast and elegant Jekyll theme with a clean dark mode. It comes with horizontal list (for navbar and footer), card list (for portfolio), and a generic vertical list. It is very easy to modify in case you want to build over it - please see _layouts/home.html to do that.
+  Here's my site!
 
 permalink: /:slug
 
@@ -56,4 +56,4 @@ defaults:
     values:
       layout: "default"
 
-exclude: "/posts/2023-01-18-fluidsim.html"
+exclude: ["/posts/2023-01-18-fluidsim.html"]
