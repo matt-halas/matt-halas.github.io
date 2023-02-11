@@ -2,10 +2,21 @@
 <meta charset="UTF-8">
 <head>
     <title>Fluid Sim</title>
-    <link rel="stylesheet" href="../assets/fluidSimResources/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <canvas id="fluidCanvas"></canvas>
-    <script src="../assets/fluidSimResources/utils.js"></script>
-    <script src="../assets/fluidSimResources/main.js"></script>
+    <script src="utils.js"></script>
+    <script src="main.js"></script>
+    <div>
+        <p>Viscosity:</p>
+        <input type="range" min="0" max="100" value="50" class="slider" id="viscRange">
+
+        <p>Diffusion:</p>
+        <input type="range" min="0" max="100" value="50" class="slider" id="diffRange">
+
+        <p>Dissolve Rate:</p>
+        <input type="range" min="0" max="100" value="50" class="slider" id="dissolveRange">
+    </div>
+    
 </body>
