@@ -1,13 +1,10 @@
 body{
+    margin:0;
     background:darkgray;
 }
 
 #fluidCanvas{
     background: black;
-    position: absolute;
-    margin: 0;
-    top: 0;
-    left: 0;
 }
 
 .slider {
