@@ -1,3 +1,0 @@
-[submodule "fluidSim"]
-	path = fluidSim
-	url = https://github.com/matt-halas/fluidSimjs
