@@ -2,14 +2,16 @@
 <meta charset="UTF-8">
 <head>
     <title>Fluid Sim</title>
-    <link rel="stylesheet" href="../assets/fluidSimResources/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script type="module" src="../fluidSimjs/solverFunctions.js"></script>
     <canvas id="fluidCanvas"></canvas>
     <script src="../fluidSimjs/utils.js"></script>
-    <script src="../fluidSimjs/main.js"></script>
+    <script src="../fluidSimjs/particle.js"></script>
+    <script type="module" src="../fluidSimjs/main.js"></script>
     <div>
-        <p style="color:blue">Viscosity:</p>
+        <p style="color:black">Viscosity:</p>
         <input type="range" min="0" max="100" value="50" class="slider" id="viscRange">
 
         <p style="color:black">Diffusion:</p>
@@ -17,6 +19,9 @@
 
         <p style="color:black">Dissolve Rate:</p>
         <input type="range" min="0" max="100" value="50" class="slider" id="dissolveRange">
+
+        <p style="color:black">Number of particles:</p>
+        <input type="range" min="0" max="500" value="1" class="slider" id="particlesRange">
     </div>
     
 </body>
