@@ -22,6 +22,20 @@ function Home() {
                     <h1>My Projects</h1>
                 </div>
                 <div className="project-container">
+
+                    <div className="card">
+                        <Link to="/projects/AerodynamicsFinalProject">
+                            <img src="images/cfd/AerodynamicsProjectPic.png" alt="Volvo" className="cardImage" />
+                            <div className="container">
+                                <h4><b>Aerodynamic analysis of an unconventional airfoil</b></h4>
+                                <p>
+                                    In this project, I tested the aerodynamic properties of an airfoil
+                                    using computational fluid dynamics and a wind tunnel test.
+                                </p>
+                            </div>
+                        </Link>
+                    </div>
+
                     <div className="card">
                         <Link to="/projects/volvo">
                             <img src="images/cfd/combustor.gif" alt="Volvo" className="cardImage" />
