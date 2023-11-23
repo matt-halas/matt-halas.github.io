@@ -10,4 +10,4 @@ function AerodynamicsFinalProject() {
     )
 }
 
-export default Resume;
+export default AerodynamicsFinalProject;

@@ -10,6 +10,7 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
 import './index.css'
+import AerodynamicsFinalProject from './pages/AerodynamicsFinalProject';
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
         path: "projects/:projectTitle",
         element: <Project />,
       },
+      {
+        path: "projects/AerodynamicsFinalProject",
+        element: <AerodynamicsFinalProject />
+      }
     ]
   },
 ]);
