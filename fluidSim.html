@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Matt Halas</title>
+    <script type="module" src="fluidSimResources/solverFunctions.js"></script>
+    <script src="fluidSimResources/utils.js"></script>
+    <script src="fluidSimResources/particle.js"></script>
+    <script type="module" src="fluidSimResources/main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="header-container">
+    <div class="header-item">
+        <a href="index.html">
+            <h3>Home</h3>
+        </a>
+    </div>
+    <div class="header-item">
+        <h3>
+            <a href="about.html">
+                About
+            </a>
+        </h3>
+    </div>
+    <div class="header-item">
+        <h3>
+            <a href="contact.html">
+                Contact
+            </a>
+        </h3>
+    </div>
+    <div class="header-item">
+        <h3>
+            <a href="resume.html">
+                Resume
+            </a>
+        </h3>
+    </div>
+</div>
+<canvas id="fluidCanvas">This browser does not support js canvas</canvas>
+<div>
+    <p style="color:black">Viscosity:</p>
+    <input type="range" min="0" max="100" value="50" class="slider" id="viscRange">
+    <p style="color:black">Diffusion:</p>
+    <input type="range" min="0" max="100" value="50" class="slider" id="diffRange">
+    <p style="color:black">Dissolve Rate:</p>
+    <input type="range" min="0" max="100" value="50" class="slider" id="dissolveRange">
+    <p style="color:black">Number of particles:</p>
+    <input type="range" min="0" max="500" value="1" class="slider" id="particlesRange">
+</div>
