@@ -10,10 +10,25 @@ img {
   margin-right: auto;
 }
 
+video {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.strava-embed-placeholder {
+  height: 405px;
+  width: 590px;
+}
+
 iframe {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  height: 405px;
+  width: 590px;
 }
 
 table {
@@ -118,6 +133,18 @@ body {
   border-radius: 50%;
   height: 500px;
   width: 500px;
+}
+
+.picture-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.picture-container-item{
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .project-div{
