@@ -2,10 +2,17 @@ a {
   text-decoration: none;
 }
 
+sup {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  line-height: 1; /* Prevent vertical alignment issues */
+}
+
 img {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -19,8 +26,8 @@ video {
 }
 
 .strava-embed-placeholder {
-  height: 405px;
-  width: 590px;
+  height: 300px;
+  width: 100%;
 }
 
 iframe {
@@ -28,21 +35,22 @@ iframe {
   margin-left: auto;
   margin-right: auto;
   height: 405px;
-  width: 590px;
+  width: 100%;
 }
 
 table {
   border-collapse: collapse;
 }
 
-th, td  {
+th,
+td {
   border: 1px solid black;
 }
 
 body {
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: "Trebuchet MS", sans-serif;
   margin: 0%;
-  padding:0%;
+  padding: 0%;
   background-color: beige;
   height: 100%;
 }
@@ -59,7 +67,7 @@ body {
 
 .card {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 40px;
   width: 300px;
@@ -68,7 +76,7 @@ body {
   background-color: lavender;
 }
 
-.cardImage{
+.cardImage {
   width: 75%;
   padding-top: 25px;
   display: block;
@@ -78,7 +86,7 @@ body {
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Add some padding inside the card container */
@@ -89,7 +97,7 @@ body {
   color: black;
 }
 
-.header-container{
+.header-container {
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -101,7 +109,7 @@ body {
   z-index: 1;
 }
 
-.header-item{
+.header-item {
   text-align: center;
   margin-right: 20px;
   padding-left: 10px;
@@ -110,67 +118,67 @@ body {
   color: black;
 }
 
-.bio-container{
+.bio-container {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 1000px;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-.bio-item{
+.bio-item {
   margin: 10px;
   padding: 10px;
   text-align: left;
   align-self: center;
 }
 
-.bio-pic{
+.bio-pic {
   object-fit: cover;
   border-radius: 50%;
   height: 500px;
   width: 500px;
 }
 
-.picture-container{
+.picture-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.picture-container-item{
+.picture-container-item {
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.project-div{
+.project-div {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.project-container{
+.project-container {
   display: flex;
   align-items: start;
 }
 
-.post-list-item{
+.post-list-item {
   margin: 10px 0;
 }
 
-.project-post{
+.project-post {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .contact-container {
-  display:flex;
-  align-items:justify;
+  display: flex;
+  align-items: justify;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
@@ -190,9 +198,9 @@ body {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-color: lavender;
-  border-radius:20px;
+  border-radius: 20px;
 }
 
 .phone-text {
@@ -213,44 +221,44 @@ body {
 
 .phone-container {
   position: relative;
-  width:100%;
+  width: 100%;
 }
 
-#fluidCanvas{
-    padding-top: 50px;
-    background: black;
+#fluidCanvas {
+  padding-top: 50px;
+  background: black;
 }
 
 .slider {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 30%;
-    height: 25px;
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: 0.2s;
-    transition: opacity 0.2s;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
 }
 
 .slider:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height:25px;
-    background: #04AA6D;
-    cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04aa6d;
+  cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    background: #04AA6D;
-    cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background: #04aa6d;
+  cursor: pointer;
 }
 
 .blog-text {
