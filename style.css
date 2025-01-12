@@ -2,6 +2,12 @@ a {
   text-decoration: none;
 }
 
+object {
+  height: 100vh; /* 100% of the viewport height */
+  width: 100%;
+  border: none; /* Optional, for a cleaner look */
+}
+
 sup {
   margin: 0;
   padding: 0;
@@ -177,16 +183,19 @@ body {
 }
 
 .contact-container {
-  display: flex;
   align-items: justify;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20%;
   width: 1000px;
+  display: flex;
+  position: relative;
 }
 
 .contact-item {
   align-self: center;
+  display: flex;
 }
 
 .phone-overlay {

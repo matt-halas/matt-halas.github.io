@@ -1,0 +1,12 @@
+{
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "off",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.printWidth": 140,
+  "prettier.proseWrap": "never",
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  "prettier.singleAttributePerLine": false,
+  "html.format.wrapAttributes": "auto",
+  "html.format.enable": true,
+  "files.eol": "\n"
+}
