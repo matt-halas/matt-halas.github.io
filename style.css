@@ -278,3 +278,10 @@ body {
   z-index: 0;
   position: relative;
 }
+
+@media (max-width: 768px) {
+  .blog-text {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
