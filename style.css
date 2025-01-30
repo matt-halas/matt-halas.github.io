@@ -279,7 +279,7 @@ body {
   position: relative;
 }
 
-@media (max-width: 768px) {
+@media (hover: none) and (pointer: coarse) {
   .blog-text {
     margin-left: 5%;
     margin-right: 5%;
