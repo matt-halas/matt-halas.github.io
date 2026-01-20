@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Matt Halas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="header-item">
+            <a href="index.html">
+                <h3>Home</h3>
+            </a>
+        </div>
+        <div class="header-item">
+            <h3>
+                <a href="about.html"> About </a>
+            </h3>
+        </div>
+        <div class="header-item">
+            <h3>
+                <a href="contact.html"> Contact </a>
+            </h3>
+        </div>
+        <div class="header-item">
+            <h3>
+                <a href="resume.html"> Resume </a>
+            </h3>
+        </div>
+    </div>
+    <div class="blog-text">
+        <h1 style="text-align: center;"> Building a Neural Network to Play Snake </h1>
+        <p> I have been wanting to build a bot that could play snake for a few years now, and a bout of motivation combined with a generous work
+            schedule finally got me started on it. Although a neural network was probably overkill for a game like this, I wanted to create my own
+            from scratch. A handmade algorithm with instruction sets probably would have been faster and better at the game, but the simple
+            environment was a great place to try my hand at my own neural network. </p>
+        <h2>Building the Game</h2>
+        <p>Before working on anything related to the bot, I built up a game with a GUI that a human (I) could play. I used a tkinter GUI for the game
+            display and control.</p>
+        <video width="50%" controls>
+            <source src="
+                    /images/snek_sim_images/game_demo.mp4" type="video/mp4" /> Your browser does not support the video tag.
+        </video>
+        <h2>Building the Bot</h2>
+        <h3>Inputs</h3>
+        <p>The first step was to give the snake eyes. The inverse distance between the front of the snake to an obstacle (wall or snake) or food was
+            used as the input to the neural network. These inputs are relative to the direction of the snake, giving a left, right, and forward signal
+            for obstacles and food, for a total of six inputs. The signal is stronger (gives a larger number) the closer the head of the snake is to
+            an obstacle or piece of food.</p>
+        <h3>Brain (Neural Network)</h3>
+        <p>The brain takes the six inputs, passes them through the neural network, and spits out an output. Since I tried to do this with as little
+            help from the internet as possible, neural network theory and best practices were thrown out of the window in favor of simplicity. In
+            general, the network consists of input coefficients, layer coefficients, and output coefficients. I arbitrarily chose to use two
+            intermediate layers with four neurons per layer. The neurons in each intermediate layer are activated if their resulting sum is greater
+            than 0. The output is one-hot encoded for three actions; turn left, turn right, or continue straight, with the highest output being set to
+            1, and the other two being set to 0. </p>
+        <p>Below is an example of the calculation used to take the input and calculate the first layer of neurons. The resulting 4x1 matrix is
+            converted to 1s and 0s based on if the resultant number is positive or negative to represent the neurons "firing" or not. F represents
+            food signals, O represents obstacle signals, and the subscripts l, f, and r represent left, forward, and right respectively. </p>
+        <script>
+            window.MathJax = {
+                tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+            };
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+        <div class="math-row"> $ \begin{bmatrix} F_l \\ F_f \\ F_r \\ O_l \\ O_f \\ O_r \end{bmatrix} \; \times \; \begin{bmatrix} x_{1,1} & x_{1,2} &
+            . & . & & \\ x_{2,1} & . & & & & \\ . & & . & & & \\ . & & & . & & \end{bmatrix} \; = \; \begin{bmatrix} F_l x_{1,1} + F_f x_{1,2} + F_r
+            x_{1,3} + O_l x_{1,4} + O_f x_{1,5} + O_r x_{1,6} \\ ... \\ ... \\ ... \end{bmatrix} $ </div>
+        <p>All coefficients were initially randomly generated, with a mutation function built in to modify coefficients for subsequent generations.
+            The mutation function modifies each coefficeint by adding a randomly generated value from a normal distribution with a mean of 0 and a
+            standard deviation that could be altered as the training went on. The standard deviation of the mutation is referred to as the "mutation
+            intensity". </p>
+        <h2>Scoring</h2>
+        <p>Before training could start, a method to compare the success of each brain was needed. Initially the bot was scored strictly based on how
+            many pieces of food it collected. This led to some fast training, but the resulting bots played the game inefficiently and only turned in
+            one direction to reach the food. To spice things up, a time element was introduced to the score. Score was subtracted for every step taken
+            to get to a food, with a maximum of 25 points and a minimum of 1 point.</p>
+        <h3>Building an army of bots</h3>
+        <p>To get any measure of success from randomly generated coefficients, a lot of brains needed to be created. Each brain was initially given 10
+            attempts, with their final score being the average of those tries. After simulating every brain in a given generation, the top ten were
+            saved and mutated to create the next generation. The rest were pruned. <i>Usefulness is survival</i>. See the top 10 brains in the first
+            generation play below.</p>
+        <video width="50%" controls>
+            <source src="
+                            /images/snek_sim_images/first_gen.mp4" type="video/mp4" /> Your browser does not support the video tag.
+        </video>
+        <p>Even if you're not good, try enough times and you might succeed. Initially, to prevent infinite length games, the brain lost if it took too
+            many steps between collecting food. This timeout length increased as the bots got better.</p>
+        <p>The top ten brains of the current generation are used as the starting point for the following generation. Ten copies of each brain (for a
+            total of 100) are created and mutated at a specified intensity. The intensity started out high and was manually tapered off to fine tune
+            behaviour and the bots got better.</p>
+        <h2>Training</h2>
+        <p>With all the architecture in place for a randomly created bot to play the game, get it's scores, and create the next generation from the
+            best of the current generation, I started the training process. Instead of having the bots play the game through the GUI, while training,
+            they ran in a simulated game that I couldn't view. The training wasn't very methodical. I altered some parameters such as the mutation
+            intensity, the score loss on each step, the number of games each bot played, and the length until timeout every 25 generations or so, as I
+            saw fit.</p>
+        <img src="/images/snek_sim_images/snek_training.png" alt="getting smarter" width="50%" />
+        <p>After 125 generations, I was happy with the performance of the bots, so I ended the training there. Below is a video of the top bot of the
+            125th generation playing the game. (Please disregard the Stereolab in the background)</p>
+        <video width="50%" controls>
+            <source src="
+                                    /images/snek_sim_images/snek_champion.mp4" type="video/mp4" /> Your browser does not support the video tag.
+        </video>
+        <h2>Results</h2>
+        <p>I'm happy with how the bot turned out given how basic the neural network was. I'm sure that with more training, the average score could be
+            increased a little more before reaching a flatter plateau. More improvement would probably come from including more information in the
+            input, adjustments to how the bot is scored, or increasing starting length as the generations progress to increase the initial difficulty.
+            The bot seems to struggle with boxing itself in once it reaches a certain length, which is not surprising given how little information is
+            given in the inputs to the neural network.</p>

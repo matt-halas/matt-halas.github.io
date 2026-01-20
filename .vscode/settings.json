@@ -9,5 +9,10 @@
   "html.format.wrapAttributes": "auto",
   "html.format.enable": true,
   "files.eol": "\n",
-  "cSpell.words": ["ranchlands"]
+  "cSpell.words": [
+    "ranchlands"
+  ],
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
 }
